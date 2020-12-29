@@ -162,17 +162,19 @@
             </div>
           </div>
         </div>
+		  
+		  
         <div class="container">
     <div class="row">
       <div class="col-md-12">
             <div class="well well-sm">
-              <form class="form-horizontal" method="post">
+              <form class="form-horizontal" name="contacto" method="post" action="sendbymail.php">
                     <fieldset>
                       <legend class="text-center header"><h3>Contáctanos</h3></legend>
 <div class="form-group">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                         <div class="col-md-8 col-xl-5">
-                          <input id="fname" name="name" type="text" required="required" placeholder="Nombre" class="form-control">
+                          <input id="nombre" name="nombre" type="text" required="required" placeholder="Nombre" class="form-control">
                     </div>
 </div>             
                         <div class="form-group">
@@ -192,13 +194,13 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                           <div class="col-md-8 col-xl-12">
-                            <textarea class="form-control" id="message" name="Mensaje" required="required" placeholder="Escribe tu mensaje aqui, pronto te responderemos." rows="7"></textarea>
+                            <textarea class="form-control" id="mensaje" name="mensaje" required="required" placeholder="Escribe tu mensaje aqui, pronto te responderemos." rows="7"></textarea>
                           </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                              <button  formaction="MAILTO:ventas@aguilagolden.com" formmethod="POST" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                              <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                             </div>
                         </div>
                 </fieldset>
